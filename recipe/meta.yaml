@@ -10,7 +10,7 @@ source:
   sha256: 383e6bed3bf548bc1e0d179bf214069507c410ca3c5045b32d39c251ba267fd2  # [win]
   
   url: https://github.com/LaurentRDC/{{ name }}/releases/download/{{ version }}/linux-x86_64-{{ version }}.tar.xz  # [linux64]
-  sha256: c10961e894589ad8efd8d16a77dd78766c654b31ab5712351e14ab0e99a75ece  # [linux64]
+  sha256: ae9dd0a114cd2603d2e047f1f1f5d3d445932a2e08ee3aedc0d40cf04f5d31b6  # [linux64]
 
 build:
   skip: True  # [osx]
