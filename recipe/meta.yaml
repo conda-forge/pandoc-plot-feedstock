@@ -18,6 +18,7 @@ build:
 
 requirements:
   run:
+    - gmp  # [linux64]
     - pandoc >=2.9
 
 test:
