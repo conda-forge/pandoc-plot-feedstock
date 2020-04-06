@@ -17,7 +17,10 @@ build:
   number: 1
 
 requirements:
+  host:
+    - gmp  # [not win]
   run:
+    - gmp  # [not win]
     - pandoc >=2.9
 
 test:
