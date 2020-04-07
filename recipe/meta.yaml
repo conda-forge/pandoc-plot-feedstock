@@ -1,25 +1,28 @@
 {% set name = "pandoc-plot" %}
-{% set version = "0.2.2.0" %}
-{% set winsha256 = "2fdef775ba6b49deba70a46df7248dfb691cb75128160148a6b7cd7ab04f37d4"}
-#{% set linuxsha256 = "ae9dd0a114cd2603d2e047f1f1f5d3d445932a2e08ee3aedc0d40cf04f5d31b6"}
+{% set version = "0.2.1.0" %}
+{% set winsha256 = "383e6bed3bf548bc1e0d179bf214069507c410ca3c5045b32d39c251ba267fd2"}
+{% set linuxsha256 = "ae9dd0a114cd2603d2e047f1f1f5d3d445932a2e08ee3aedc0d40cf04f5d31b6"}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/LaurentRDC/{{ name }}/releases/download/{{ version }}/pandoc-plot-windows-x86_64-{{ version }}.zip  # [win]
+  url: https://github.com/LaurentRDC/{{ name }}/releases/download/{{ version }}/windows-x86_64-{{ version }}.zip  # [win]
   sha256: {{ winsha256 }}  # [win]
   
-  # url: https://github.com/LaurentRDC/{{ name }}/releases/download/{{ version }}/linux-x86_64-{{ version }}.tar.xz  # [linux64]
-  # sha256: {{ linuxsha256 }}  # [linux64]
+  url: https://github.com/LaurentRDC/{{ name }}/releases/download/{{ version }}/linux-x86_64-{{ version }}.tar.xz  # [linux64]
+  sha256: {{ linuxsha256 }}  # [linux64]
 
 build:
-  skip: True  # [not win]
-  number: 0
+  skip: True  # [osx]
+  number: 1
 
 requirements:
+  host:
+    - gmp  # [not win]
   run:
+    - gmp  # [not win]
     - pandoc >=2.9
 
 test:
