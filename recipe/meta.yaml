@@ -1,7 +1,5 @@
 {% set name = "pandoc-plot" %}
 {% set version = "0.2.2.0" %}
-{% set winsha256 = "2fdef775ba6b49deba70a46df7248dfb691cb75128160148a6b7cd7ab04f37d4"}
-#{% set linuxsha256 = "ae9dd0a114cd2603d2e047f1f1f5d3d445932a2e08ee3aedc0d40cf04f5d31b6"}
 
 package:
   name: {{ name|lower }}
@@ -9,10 +7,7 @@ package:
 
 source:
   url: https://github.com/LaurentRDC/{{ name }}/releases/download/{{ version }}/pandoc-plot-windows-x86_64-{{ version }}.zip  # [win]
-  sha256: {{ winsha256 }}  # [win]
-  
-  # url: https://github.com/LaurentRDC/{{ name }}/releases/download/{{ version }}/linux-x86_64-{{ version }}.tar.xz  # [linux64]
-  # sha256: {{ linuxsha256 }}  # [linux64]
+  sha256: "2fdef775ba6b49deba70a46df7248dfb691cb75128160148a6b7cd7ab04f37d4"  # [win]
 
 build:
   skip: True  # [not win]
