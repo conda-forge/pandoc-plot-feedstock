@@ -9,9 +9,12 @@ source:
   url: https://github.com/LaurentRDC/{{ name }}/releases/download/{{ version }}/pandoc-plot-windows-x86_64.zip  # [win]
   sha256: "e548b6eccd86c588c2a9c41cca118f35d26e253cd108556e1fab009938b61cce"  # [win]
 
+  url: https://github.com/LaurentRDC/{{ name }}/releases/download/{{ version }}/pandoc-plot-macos-x86_64.tar.xz  # [osx]
+  sha256: "ec2e6718b71168778a723dcae69919289b72b2b2f9618974471167bd1cdc3241"  # [osx]
+
 build:
-  skip: True  # [not win]
-  number: 0
+  skip: True  # [linux]
+  number: 1
 
 requirements:
   run:
