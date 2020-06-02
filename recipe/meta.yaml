@@ -20,7 +20,7 @@ build:
 
 requirements:
   host:
-    - gmp
+    - libgmp
   run:
     - pandoc >=2.9
 
