@@ -19,8 +19,6 @@ build:
   number: 1
 
 requirements:
-  host:
-    - libgmp
   run:
     - pandoc >=2.9
 
