@@ -16,7 +16,7 @@ source:
   sha256: 807c2c8475ad8381a3d9f8ab38df14e56ccc4e2c33d1da786faa7f05288ab3fc  # [osx]
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   run:
