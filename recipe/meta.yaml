@@ -16,11 +16,14 @@ source:
   sha256: 0942fd4d5a5826ed0f57d429704548197b696615ad990921721c76ed4f598565  # [osx]
 
 build:
-  number: 0
+  number: 1
 
 requirements:
+  host:
+    - gmp  # [linux]
   run:
     - pandoc >=2.10,<2.11
+    - gmp  # [linux]
 
 test:
   commands:
