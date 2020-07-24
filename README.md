@@ -5,7 +5,7 @@ Home: https://github.com/LaurentRDC/pandoc-plot
 
 Package license: GPL-2.0-or-later
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Render and include figures in Pandoc documents using your plotting toolkit of choice
 
