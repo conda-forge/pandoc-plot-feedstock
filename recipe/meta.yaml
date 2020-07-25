@@ -6,8 +6,14 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/LaurentRDC/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: a836741cecf043162a0a78490f254625f04f0b22a3d1ec97e3a8bbd7498a0f60
+# At this moment, the source packaged by GitHub for 0.8.0.0 contains a reference to
+# a commit to pandoc-include-code which does not exist.
+# Therefore, the 'url' below points to an amended source, with the only change being
+# about pandoc-include-code.
+# For the next version (e.g. 1.0.0.0), please point 'url' to the source packaged by GitHub
+# url: https://github.com/LaurentRDC/{{ name }}/archive/{{ version }}.tar.gz
+  url: https://github.com/LaurentRDC/{{ name }}/releases/download/{{ version }}/{{ name }}-{{ version }}-conda-fix.tar.xz
+  sha256: 50049ef6df7e7988bbbbad06ab4088902280f1b267b415557c1218606ef2a26d
 
 build:
   number: 1
