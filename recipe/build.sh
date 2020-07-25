@@ -1,4 +1,12 @@
 #!/bin/bash
+#set -euo pipefail
+#IFS=$'\n\t'
+echo ${PREFIX}
+#mkdir -p ${PREFIX}/bin
+#mv bin/* ${PREFIX}/bin
+stack setup
+stack install
 
-mkdir -p "$PREFIX/bin"
-/bin/mv pandoc-plot "$PREFIX/bin"
+echo ${PREFIX}
+mkdir -p ${PREFIX}/bin
+mv ${HOME}/.local/bin/* ${PREFIX}/bin
