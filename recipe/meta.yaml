@@ -17,6 +17,10 @@ source:
 
 build:
   number: 1
+  # No recent GHC version available on CentOS 6.
+  # Only when CentOS 7 is available for use in conda-forge, can we build
+  # linux executables
+  skip: true  # [linux]
 
 requirements:
   build:
