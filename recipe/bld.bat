@@ -1,4 +1,3 @@
-stack upgrade
 stack setup
 stack install
 
