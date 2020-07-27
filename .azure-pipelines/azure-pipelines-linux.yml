@@ -4,7 +4,8 @@
 
 jobs:
 - job: linux
-  pool: {vmImage: ubuntu-16.04}
+  pool:
+    vmImage: ubuntu-16.04
   strategy:
     matrix:
       linux_: {CONFIG: linux_, UPLOAD_PACKAGES: 'True', DOCKER_IMAGE: condaforge/linux-anvil-cos7-x86_64}
