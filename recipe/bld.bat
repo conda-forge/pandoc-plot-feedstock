@@ -1,5 +1,5 @@
+stack upgrade
 stack setup
-
 stack install
 
 if not exist %LIBRARY_BIN% mkdir %LIBRARY_BIN% || exit 1

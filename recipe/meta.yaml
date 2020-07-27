@@ -26,11 +26,11 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - stack >=2,<3
+    - stack
   host:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - stack >=2,<3
+    - stack
   run:
     - pandoc >=2.10,<2.11
 
