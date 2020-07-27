@@ -20,8 +20,8 @@ build:
 
 requirements:
   build:
-    - sysroot_linux-64 2.17  # [linux64]
     - {{ compiler('c') }}
+    - sysroot_linux-64 2.17  # [linux64]
     - {{ compiler('cxx') }}
     - stack >=2,<3
   host:
