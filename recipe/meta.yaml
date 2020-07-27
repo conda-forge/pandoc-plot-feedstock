@@ -20,9 +20,10 @@ build:
 
 requirements:
   build:
+    - make  # [linux64]
+    - gmp   # [linux64]
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - make  # [linux64]
     - stack >=2,<3
   host:
     - {{ compiler('c') }}
