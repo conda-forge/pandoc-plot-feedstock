@@ -26,6 +26,7 @@ requirements:
     - {{ compiler('cxx') }}
     - stack >=2,<3
   host:
+    - gmp   # [linux64]
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - stack >=2,<3
