@@ -1,22 +1,16 @@
 {% set name = "pandoc-plot" %}
-{% set version = "0.8.0.0" %}
+{% set version = "0.8.1.0" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-# At this moment, the source packaged by GitHub for 0.8.0.0 contains a reference to
-# a commit to pandoc-include-code which does not exist.
-# Therefore, the 'url' below points to an amended source, with the only change being
-# about pandoc-include-code.
-# For the next version (e.g. 1.0.0.0), please point 'url' to the source packaged by GitHub
-# url: https://github.com/LaurentRDC/{{ name }}/archive/{{ version }}.tar.gz
-  url: https://github.com/LaurentRDC/{{ name }}/releases/download/{{ version }}/{{ name }}-{{ version }}-conda-fix.tar.xz
-  sha256: 50049ef6df7e7988bbbbad06ab4088902280f1b267b415557c1218606ef2a26d
+  url: https://github.com/LaurentRDC/{{ name }}/archive/{{ version }}.tar.gz
+  sha256: 7418258abbef792884134beee0640d57d5a65f0dca1eaea63162d4f0889146e2
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
