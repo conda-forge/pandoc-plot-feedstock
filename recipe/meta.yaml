@@ -6,8 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/LaurentRDC/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 3b19dd20a805e545cb74377f126e08e53402a43c205b44088975b5b2f787416e
+  url: https://github.com/LaurentRDC/{{ name }}/releases/download/{{ version }}/pandoc-plot-windows-x86_64.zip  # [win]
+  sha256: a369ba265deca0aef56be19df7026f1e80934d4b6858dc89adc6e0d263fedc5e  # [win]
+
+  url: https://github.com/LaurentRDC/{{ name }}/archive/{{ version }}.tar.gz  # [not win]
+  sha256: 3b19dd20a805e545cb74377f126e08e53402a43c205b44088975b5b2f787416e  # [not win]
 
 build:
   number: 0
@@ -16,14 +19,14 @@ requirements:
   build:
     - make  # [linux64]
     - gmp   # [linux64]
-    - {{ compiler('c') }}
-    - {{ compiler('cxx') }}
-    - stack >=2,<3
+    - {{ compiler('c') }}  # [not win]
+    - {{ compiler('cxx') }}  # [not win]
+    - stack >=2,<3  # [not win]
   host:
     - gmp   # [linux64]
-    - {{ compiler('c') }}
-    - {{ compiler('cxx') }}
-    - stack >=2,<3
+    - {{ compiler('c') }}  # [not win]
+    - {{ compiler('cxx') }}  # [not win]
+    - stack >=2,<3  # [not win]
   run:
     - pandoc >=2.10,<2.11
 
