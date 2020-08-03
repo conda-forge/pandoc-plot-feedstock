@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/LaurentRDC/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 7418258abbef792884134beee0640d57d5a65f0dca1eaea63162d4f0889146e2
+  sha256: 3b19dd20a805e545cb74377f126e08e53402a43c205b44088975b5b2f787416e
 
 build:
   number: 0
