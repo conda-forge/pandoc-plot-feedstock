@@ -1,5 +1,5 @@
 {% set name = "pandoc-plot" %}
-{% set version = "0.8.1.0" %}
+{% set version = "0.9.0.0" %}
 
 package:
   name: {{ name }}
