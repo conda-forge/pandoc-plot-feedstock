@@ -5,9 +5,13 @@ Home: https://github.com/LaurentRDC/pandoc-plot
 
 Package license: GPL-2.0-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pandoc-plot-feedstock/blob/master/LICENSE.txt)
 
 Summary: Render and include figures in Pandoc documents using your plotting toolkit of choice
+
+Development: https://github.com/LaurentRDC/pandoc-plot/
+
+Documentation: https://github.com/LaurentRDC/pandoc-plot/
 
 pandoc-plot turns code blocks present in your documents (Markdown, LaTeX, etc.)
 into embedded figures, using your plotting toolkit of choice, including Matplotlib, ggplot2,
