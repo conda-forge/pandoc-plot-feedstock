@@ -1,5 +1,5 @@
 {% set name = "pandoc-plot" %}
-{% set version = "0.9.4.0" %}
+{% set version = "1.0.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,20 +7,20 @@ package:
 
 source:
   url: https://github.com/LaurentRDC/{{ name }}/releases/download/{{ version }}/pandoc-plot-windows-x86_64.zip  # [win]
-  sha256: 39bcefd10438c0e70479a0d7170c5ba5a5f7c6c0fdda8f5801b50b157e5b45f0  # [win]
+  sha256: 8c161ef62dea35a9fa9377c4ddaf22de19917e582d01305b5e217fbba2f0d294  # [win]
 
   url: https://github.com/LaurentRDC/{{ name }}/releases/download/{{ version }}/pandoc-plot-linux-x86_64-static.tar.xz  # [linux64]
-  sha256: 8d6831f06113d89e0e95fce09413112a2ff1cfa3d43a3f4617ca42a78e398fab  # [linux64]
+  sha256: 96dbfb2b6bdd2c7d5c3679cf43d232ba0f4dd8bff2e0573b1d79065762930fb4  # [linux64]
 
   url: https://github.com/LaurentRDC/{{ name }}/releases/download/{{ version }}/pandoc-plot-macos-x86_64.tar.xz  # [osx]
-  sha256: 3bcb9433ed6b5787f6b46c3fe7f7fbc8bd571339298903ec2fafe547ee651804  # [osx]
+  sha256: 534772beded7eecefdce116bb20b30cc4f5e3bc0035ff9d50b19ad4ddaa32325  # [osx]
 
 build:
   number: 0
 
 requirements:
   run:
-    - pandoc >=2.10,<2.11
+    - pandoc >=2.11,<2.12
 
 test:
   commands:
