@@ -16,11 +16,11 @@ source:
   sha256: 9b30248a304db7af68b963e8fb44f45bc7b093badb35ab9e96f12d4599bbe1f7  # [osx]
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   run:
-    - pandoc >=2.11,<2.13
+    - pandoc >=2.11,<2.14
 
 test:
   commands:
