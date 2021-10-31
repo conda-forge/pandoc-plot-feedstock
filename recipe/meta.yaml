@@ -21,8 +21,8 @@ build:
 
 requirements:
   run:
-    - pandoc >=2.11,<2.15
-    
+    - pandoc >=2.11,<2.16
+
 test:
   commands:
     - pandoc-plot --version
