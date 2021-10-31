@@ -1,3 +1,6 @@
 conda_forge_output_validation: true
 bot:
   automerge: true
+# https://conda-forge.org/docs/maintainer/knowledge_base.html#using-centos-7
+os_version:
+  linux_64: cos7
