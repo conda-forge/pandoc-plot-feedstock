@@ -17,11 +17,11 @@ source:
 
 build:
   skip: true  # [linux]
-  number: 0
+  number: 1
 
 requirements:
   run:
-    - pandoc >=2.11,<2.18
+    - pandoc >=2.11,<2.19
 
 test:
   commands:
